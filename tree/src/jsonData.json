@@ -1,0 +1,77 @@
+[
+	{
+		"id": 1,
+		"pid": 0,
+		"content": "蚂蚁大战大象",
+		"isLeaf": 1,
+		"comments": [
+			{
+				"id": 2,
+				"pid": 1,
+				"content": "大象被打趴下了",
+				"isLeaf": 1,
+				"comments": [
+					{
+						"id": 3,
+						"pid": 2,
+						"content": "蚂蚁也不好过",
+						"isLeaf": 0,
+						"comments": []
+					},
+					{
+						"id": 4,
+						"pid": 2,
+						"content": "瞎说",
+						"isLeaf": 1,
+						"comments": [
+							{
+								"id": 5,
+								"pid": 4,
+								"content": "没有瞎说",
+								"isLeaf": 0,
+								"comments": []
+							}
+						]
+					},
+					{
+						"id": 9,
+						"pid": 2,
+						"content": "大象进医院了",
+						"isLeaf": 1,
+						"comments": [
+							{
+								"id": 10,
+								"pid": 9,
+								"content": "护士是蚂蚁",
+								"isLeaf": 0,
+								"comments": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 6,
+				"pid": 1,
+				"content": "怎么可能",
+				"isLeaf": 1,
+				"comments": [
+					{
+						"id": 7,
+						"pid": 6,
+						"content": "怎么没有可能",
+						"isLeaf": 0,
+						"comments": []
+					},
+					{
+						"id": 8,
+						"pid": 6,
+						"content": "可能性是很大的",
+						"isLeaf": 0,
+						"comments": []
+					}
+				]
+			}
+		]
+	}
+]

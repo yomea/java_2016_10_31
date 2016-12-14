@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+
+  <tlib-version>1.0</tlib-version>
+  <short-name>userDfined</short-name>
+  <uri>http://com.BodyTagSupport</uri>
+
+  <tag>
+    <name>htmlFilter</name>
+    <tag-class>com.simpleTagSupport.HtmlFilterTag</tag-class>
+    <!-- simpleTagSupport不支持JSP，即不支持JSP脚本 -->
+    <body-content>scriptless</body-content>
+  </tag>
+  
+  <tag>
+    <name>readFile</name>
+    <tag-class>com.simpleTagSupport.ReadFiltTag</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+       <name>src</name>
+       <required>true</required>
+       <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+   <tag>
+    <name>JspFragment</name>
+    <tag-class>com.simpleTagSupport.jspFrament.JspFragmentTest</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+       <name>jspFragment1</name>
+       <required>true</required>
+       <fragment>true</fragment>
+    </attribute>
+    <attribute>
+       <name>jspFragment2</name>
+       <required>true</required>
+       <fragment>true</fragment>
+    </attribute>
+  </tag>
+  
+<!--   <tag-file>
+  	<name>test</name>
+  	<path>/META-INF/tags/xxx.tag</path>
+  </tag-file> -->
+
+</taglib>

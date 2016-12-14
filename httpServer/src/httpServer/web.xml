@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app>
+	 <servlet>
+        <servlet-name>my</servlet-name>
+        <servlet-class>httpServer.MyServlet</servlet-class>
+        <init-param>
+            <param-name></param-name>
+            <param-value></param-value>
+        </init-param>
+       
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>my</servlet-name>
+        <url-pattern>/my</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>you</servlet-name>
+        <servlet-class>httpServer.YouServlet</servlet-class>
+        <init-param>
+            <param-name></param-name>
+            <param-value></param-value>
+        </init-param>
+       
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>you</servlet-name>
+        <url-pattern>/you</url-pattern>
+    </servlet-mapping>
+    
+
+
+</web-app>

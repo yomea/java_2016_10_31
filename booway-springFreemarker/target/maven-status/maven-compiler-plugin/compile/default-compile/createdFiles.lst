@@ -1,0 +1,5 @@
+com\booway\pojo\User.class
+com\booway\service\serviceImpl\UserServiceImpl.class
+com\booway\mapper\UserMapper.class
+com\booway\controller\UserController.class
+com\booway\service\UserService.class

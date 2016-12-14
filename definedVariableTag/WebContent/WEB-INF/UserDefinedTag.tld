@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+        "http://java.sun.com/j2ee/dtd/web-jsptaglibrary_1_2.dtd">
+
+<taglib>
+
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>1.2</jsp-version>
+  <short-name>userDfined</short-name>
+  <uri>http://com.user_defined_tag</uri>
+  <description>
+    user defined tag
+  </description>
+
+  <tag>
+    <name>useBean</name>
+    <tag-class>com.definedVariableTag_1.DefinedVariable</tag-class>
+    <body-content>JSP</body-content>
+     <variable>
+     	<!-- 直接定义变量名，以这个变量名从pageContext中取值 -->
+     	<!-- <name-given>date</name-given> -->
+     	<!-- 从标签的属性中指定的name值作为变量名 -->
+    	<name-from-attribute>name</name-from-attribute>
+    	<!-- 定义这个变量的类型 -->
+    	<variable-class>java.util.Date</variable-class>
+    	<!-- 是否要显示定义这个变量，如果在JSP页面已经定义这个变量，那么这个值应为FALSE -->
+    	<declare>true</declare>
+    	<!-- 从标签体开始有效 -->
+    	<scope>AT_BEGIN</scope>
+    </variable>
+    <attribute>
+    	<!-- 定义变量名 -->
+       <name>name</name>
+       <required>true</required>
+       <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+    	<!-- 定义变量类型 -->
+       <name>type</name>
+       <required>true</required>
+       <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+    	<!-- 定义变量范围 -->
+       <name>scope</name>
+       <required>true</required>
+       <rtexprvalue>true</rtexprvalue>
+    </attribute>
+   
+  </tag>
+
+</taglib>

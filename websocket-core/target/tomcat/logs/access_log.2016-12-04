@@ -1,0 +1,6 @@
+127.0.0.1 - - [04/Dec/2016:20:33:28 +0800] "GET /index.jsp HTTP/1.1" 200 1976 http-bio-8080-exec-1 1242
+0:0:0:0:0:0:0:1 - - [04/Dec/2016:20:33:28 +0800] "GET /websocket HTTP/1.1" 101 - http-bio-8080-exec-5 27
+127.0.0.1 - - [04/Dec/2016:20:33:49 +0800] "GET /index.jsp HTTP/1.1" 200 1976 http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [04/Dec/2016:20:33:49 +0800] "GET /websocket HTTP/1.1" 101 - http-bio-8080-exec-7 7
+127.0.0.1 - - [04/Dec/2016:20:34:13 +0800] "GET /index.jsp HTTP/1.1" 200 1976 http-bio-8080-exec-6 2
+0:0:0:0:0:0:0:1 - - [04/Dec/2016:20:34:13 +0800] "GET /websocket HTTP/1.1" 101 - http-bio-8080-exec-10 5
